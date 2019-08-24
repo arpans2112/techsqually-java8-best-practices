@@ -37,5 +37,7 @@ public class CandyDisbtribution {
 
         }
         System.out.println(Arrays.toString(childernArray));
+
+
     }
 }
