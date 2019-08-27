@@ -1,4 +1,4 @@
-package com.techsqually.problemSolving;
+package com.techsqually.problemSolving.strings;
 
 import java.util.ArrayList;
 import java.util.HashSet;
