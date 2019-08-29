@@ -17,13 +17,17 @@ public class UniqeElementsForWhichSumExistInArray {
 
     public static void checkUniqeSum(int[] givenArray) {
 
-        HashSet<Integer> uniqueValues = (HashSet<Integer>) Arrays.stream(givenArray).mapToObj(i -> (int) i).collect(Collectors.toSet());
-        ArrayList<Integer> givenArrayList = (ArrayList<Integer>) Arrays.stream(givenArray).mapToObj(i -> (int) i).collect(Collectors.toList());
+//        HashSet<Integer> uniqueValues = (HashSet<Integer>) Arrays.stream(givenArray).mapToObj(i -> i).collect(Collectors.toSet());
+//        ArrayList<Integer> givenArrayList = (ArrayList<Integer>) Arrays.stream(givenArray).mapToObj(i ->  i).collect(Collectors.toList());
+
+        HashSet<Integer> uniqueValues = (HashSet<Integer>) Arrays.stream(givenArray).mapToObj(i -> i).collect(Collectors.toSet());
+        ArrayList<Integer> givenArrayList = (ArrayList<Integer>) Arrays.stream(givenArray).mapToObj(i ->  i).collect(Collectors.toList());
+
 
 
         HashSet<Integer> outPutHashSet = new HashSet<>();
 
-        int sum = 0;
+        int sum;
 
         for (int startIndex = 0; startIndex < givenArrayList.size() - 1; startIndex++) {
 
