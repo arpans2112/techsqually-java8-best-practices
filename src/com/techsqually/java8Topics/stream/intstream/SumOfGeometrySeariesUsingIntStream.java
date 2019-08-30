@@ -1,4 +1,4 @@
-package com.techsqually.java8Topics.stream;
+package com.techsqually.java8Topics.stream.intstream;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -23,5 +23,5 @@ public class SumOfGeometrySeariesUsingIntStream {
 
         return geometorySearies;
     }
-    
+
 }

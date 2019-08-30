@@ -1,4 +1,4 @@
-package com.techsqually.java8Topics.stream;
+package com.techsqually.java8Topics.stream.liststream;
 
 import java.util.ArrayList;
 import java.util.Arrays;

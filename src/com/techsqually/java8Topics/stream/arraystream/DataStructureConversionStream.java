@@ -1,4 +1,4 @@
-package com.techsqually.java8Topics.stream;
+package com.techsqually.java8Topics.stream.arraystream;
 
 public class DataStructureConversionStream {
 
