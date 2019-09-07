@@ -2,8 +2,8 @@ package com.techsqually.java8Topics.overloading;
 
 public class MethodOverLoading {
 
-    /*
-    * 1.   Mathod overloading has nothing to do with return type, it will give you compile time error
+    /*  Method Overload is one way of Polymorphism
+     * 1.   Method overloading has nothing to do with return type, it will give you compile time error
     * 2.   Method with same number of Parameters - must be different in parameter types
     * 3.   Method with different number of parameters, one with one parameter, another with 2 parameters
     * 4.   One override method can be called from another print
