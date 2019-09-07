@@ -36,8 +36,8 @@ public class ObjectComparisionTest {
         System.out.println("obj3 variables : " + obj3.a + " , " + obj3.b);
 
 
-//        System.out.println("obj1 and obj2 comparision : " + obj1.equalTo(obj2));
-//        System.out.println("obj1 and obj3 comparision : " + obj1.equalTo(obj3));
+        System.out.println("obj1 and obj2 comparision : " + obj1.equalTo(obj2));
+        System.out.println("obj1 and obj3 comparision : " + obj1.equalTo(obj3));
 
     }
 
