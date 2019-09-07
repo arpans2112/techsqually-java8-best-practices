@@ -10,7 +10,12 @@ public class ConstructorOverLoading {
 
     ConstructorOverLoading(ConstructorOverLoading constructorOverLoading) {
 
-        System.out.println(constructorOverLoading.a + " : " + constructorOverLoading.b + " : " + constructorOverLoading.c);
+        /*
+         * object Cloning
+         * */
+        a = constructorOverLoading.a;
+        b = constructorOverLoading.b;
+        c = constructorOverLoading.c;
     }
 
     ConstructorOverLoading(int a) {
@@ -46,6 +51,7 @@ public class ConstructorOverLoading {
          * */
         ConstructorOverLoading noParameter = new ConstructorOverLoading();
         ConstructorOverLoading withObjectParameter = new ConstructorOverLoading(new ConstructorOverLoading(10));
+        System.out.println(withObjectParameter.a + " : " + withObjectParameter.b + " : " + withObjectParameter.c);
         ConstructorOverLoading intOneParameter = new ConstructorOverLoading(1);
         ConstructorOverLoading intTwoParameter = new ConstructorOverLoading(1, 2);
         ConstructorOverLoading intThreeParameter = new ConstructorOverLoading(1, 2, 3);
