@@ -18,7 +18,7 @@ public class MethodOverLoading {
         * then it will look for a method with printTest(int i), that will be executed, if it
         * didn't find any method with that type, it will make auto conversion of variable type and will
         * lookfor the related method, in our case it wil go for the printTest(double d) as int i can be
-        * automatic converted to double value. and will call that method. 
+         * automatic converted to double value. and will call that method.
         * */
 
         printTest();
