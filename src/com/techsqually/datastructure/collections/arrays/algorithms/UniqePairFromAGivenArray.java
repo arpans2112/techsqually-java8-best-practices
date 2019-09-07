@@ -1,10 +1,6 @@
 package com.techsqually.datastructure.collections.arrays.algorithms;
 
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.TreeSet;
-
-import static com.techsqually.problemSolving.BigIntegerArray.sum;
 
 public class UniqePairFromAGivenArray {
 
@@ -14,9 +10,8 @@ public class UniqePairFromAGivenArray {
         int[] arr = {1, 3, 2, 6, 1, 2};
 
 
-
-
         System.out.println(uniqePairsFromAGivenArray(arr));
+        System.out.println(uniquePairs(arr));
 
 //        //Operations on a pair of arrays
 //        int pairsCount = (int)uniqePairsFromAGivenArray(arr).stream().map(pair -> pair.replace(":",""))
@@ -33,16 +28,28 @@ public class UniqePairFromAGivenArray {
 
         HashSet<String> uniquePairs = new HashSet<>();
 
+
         for(Integer i : givenArray){
             for(Integer j: givenArray){
-                if (i < j){
-                    pair = i + ":" + j;
-                }else{
-                    pair = j + ":" + i;
-                }
+                pair = i < j ? i + ":" + j : j + ":" + i;
                 uniquePairs.add(pair);
             }
         }
         return uniquePairs;
+    }
+
+
+    //Less complexity than above method
+    public static HashSet uniquePairs(int[] giveArray) {
+
+        HashSet<String> uniqePairs = new HashSet<>();
+        for (int i = 0; i < giveArray.length; i++) {
+            for (int j = i; j < giveArray.length; j++) {
+
+                String element = giveArray[i] < giveArray[j] ? (giveArray[i] + ":" + giveArray[j]) : (giveArray[j] + ":" + giveArray[i]);
+                uniqePairs.add(element);
+            }
+        }
+        return uniqePairs;
     }
 }
