@@ -4,7 +4,7 @@ public class ObjectComparisionTest {
 
     public int a;
     public int b;
-    
+
     /*
      *  Tells if two objects of a class are equal or Note
      *

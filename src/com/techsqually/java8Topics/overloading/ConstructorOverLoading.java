@@ -8,6 +8,11 @@ public class ConstructorOverLoading {
         System.out.println("No Parameter");
     }
 
+    ConstructorOverLoading(ConstructorOverLoading constructorOverLoading) {
+
+        System.out.println(constructorOverLoading.a + " : " + constructorOverLoading.b + " : " + constructorOverLoading.c);
+    }
+
     ConstructorOverLoading(int a) {
         this.a = b = c = a;
         System.out.println(this.a + " : " + this.b + " : " + this.c);
@@ -40,6 +45,7 @@ public class ConstructorOverLoading {
          * can use different ways of initialize the variables
          * */
         ConstructorOverLoading noParameter = new ConstructorOverLoading();
+        ConstructorOverLoading withObjectParameter = new ConstructorOverLoading(new ConstructorOverLoading(10));
         ConstructorOverLoading intOneParameter = new ConstructorOverLoading(1);
         ConstructorOverLoading intTwoParameter = new ConstructorOverLoading(1, 2);
         ConstructorOverLoading intThreeParameter = new ConstructorOverLoading(1, 2, 3);
