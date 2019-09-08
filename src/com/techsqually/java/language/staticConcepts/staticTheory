@@ -1,0 +1,10 @@
+we can have static method, block and instance variables
+
+Restriction on Method:
+1. They can only directly call other static method
+2. They can only directly access static variables of the class
+3. They can't refer to this or super in any way
+4. Static method and variables can be accessed by ClassName.variableName/ClassName.methodName
+5. check StaticBlock.java class to see the behaviour of static blocks
+
+

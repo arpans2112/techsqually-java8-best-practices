@@ -1,0 +1,6 @@
+1. when a variable is declared as final, then it's value can't be modified
+2. Naming Convention: Variable name must be uppercase separated by _ e.g final int FILE_NEW = 1;
+3. you can initilize the final variable by two ways
+     i.) at the time of declaration
+     ii.) you can assign it a value within a constructor
+     first approach is most common approach
