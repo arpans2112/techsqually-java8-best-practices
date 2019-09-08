@@ -7,4 +7,21 @@
     * 5. members(variable/methods) are default public in interface, you don't need to explicitly define them
     * 6. due to point 5, interface method can be access accross different packages too
     * 7. A Class can extend only one class but can implement nultiple interfaces
+      8. An abstract class implementing any interface doesn't mean to implement all interface method
+      9. Interface without any method, can be used to shared constants across multiple programs
+      10. One interface can extends another interface like a class, But the class implementing the subInterface
+          must implement all the methods of subInterface and it's all sub superInterfaces.
+      11. jdk -8 includes default and static method in interface
+      12  default method will have default implementation and are not mandatory to be implemented by a
+          class implementing interface
+      13. default method feature added in the interface for two reason
+           i.) Gives flexibility to add new features in existing interface, without breaking the existing
+               class code, as implementation of default method is optional
+           ii.) The optional default method gives flexibility of having optional feature in a single interface
+                for example a remove method is there in interface not to be implemented for immutable class
+      14  static method in the Interface can be accessed by InterfaceName.methodName
+      15. static interface method are not inheritated by either an implementing class or a subInterface
+      16. interface can't have instance variables those are not final
+      17. private interface method in/after JDK-9. This gives flexibility to have a resubility code can be used
+          across mulitple default methods.
     * */
