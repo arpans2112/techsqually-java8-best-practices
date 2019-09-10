@@ -17,7 +17,7 @@ public class ConvertingCharacterListToString {
                                                                        .mapToObj(c -> (char)c)
                                                                        .collect(Collectors.toList());
 
-
+        int a = (int) givenString.chars().filter(i -> i == 'A').count();
 
         //To get the set of Unique value from a String
         HashSet<Character> characterHashSet  = (HashSet<Character>) givenString
