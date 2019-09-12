@@ -1,0 +1,14 @@
+1. hashset :
+    1. contains unique value
+    2. high performance
+    3. unordered Collection
+
+2. linkedHashSet :
+   1. contains unique values
+   2. slower than hashSet
+   3. insertion order is maintained
+
+3. TreeHashSet:
+    1. sorted based on dictionary order
+    2. slowest in the processing
+    3. contains unique values
