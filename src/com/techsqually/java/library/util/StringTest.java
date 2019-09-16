@@ -1,5 +1,7 @@
 package com.techsqually.java.library.util;
 
+import java.util.stream.Collectors;
+
 public class StringTest {
 
     /**
@@ -12,9 +14,17 @@ public class StringTest {
 
     public static void main(String[] args) {
 
-        String givenString = "Arpan";
+        String givenString = "asvkugfiugsalddlasguifgukvsa";
         System.out.println(findCharacter(givenString, 'A'));
 
+        /*Returns 2*/
+        System.out.println('c' - 'a');
+
+        /*Sorted String : Aanpr , */
+        String abc = "Arpan".chars().sorted().mapToObj(i -> (char) i).map(String::valueOf).collect(Collectors.joining());
+        String reverseOfGivenString = givenString.chars().sorted().mapToObj(i -> (char) i).map(String::valueOf).collect(Collectors.joining());
+        System.out.println(abc);
+        System.out.println(reverseOfGivenString);
 
     }
 

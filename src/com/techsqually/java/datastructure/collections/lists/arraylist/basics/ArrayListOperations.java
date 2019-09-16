@@ -15,10 +15,20 @@ public class ArrayListOperations {
 
         List<String> alist = new ArrayList<>(Arrays.asList("Arpan","Senorita","Sanjay","Pranjay","Sanjay"));
         List<String> blist = new ArrayList<>(Arrays.asList("Arpan","Senorita","Sanjay","Kiran"));
+
         ArrayList<String> acloneList = (ArrayList<String>) ((ArrayList<String>) alist).clone();
 
         System.out.println(alist.contains("Arpan"));
+
         System.out.println(alist.isEmpty());
+
+        /**Returns the sub list*/
+        alist.subList(2, 3);
+
+        String[] array = (String[]) alist.toArray();
+
+
+
         System.out.println(Arrays.asList(acloneList));
         ((ArrayList<String>) alist).ensureCapacity(10);
         System.out.println(Arrays.asList(alist));
@@ -37,7 +47,29 @@ public class ArrayListOperations {
         elist.retainAll(blist);
         System.out.println(Arrays.asList(elist));
 
-        Iterator<String> iterator =  blist.listIterator(2);
+        Iterator<String> listiterator = blist.listIterator(2);
+        Iterator<String> iterator = blist.iterator();
+
+
+        /** Difference BETWEEN LIST ITERATOR AND ITERATOR
+         *
+         blist.listIterator() - Methods
+         blist.listIterator().previous()
+         blist.listIterator().previousIndex()
+         blist.listIterator().hasPrevious()
+         blist.listIterator().next()
+         blist.listIterator().nextIndex()
+         blist.listIterator().hasNext()
+         blist.listIterator().add("");
+         blist.listIterator().set("");*/
+
+      /*
+        blist.iterator().next()
+        blist.iterator().hasNext()
+        blist.iterator().remove();
+        */
+
+
         while(iterator.hasNext()){
              System.out.println(iterator.next());
         }

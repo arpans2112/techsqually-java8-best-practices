@@ -21,7 +21,7 @@ public class ArrayManipulation {
 
         System.out.println(arrayManipulation(4, queries));
 
-         
+
     }
 
     static long arrayManipulation(int n, int[][] queries) {
