@@ -21,6 +21,8 @@ public class ArraysEqualsTest {
         System.out.println(Arrays.equals(a, b));
         System.out.println(Arrays.equals(a, c));
         System.out.println(Arrays.equals(d, e));
+
+
     }
 
 }
