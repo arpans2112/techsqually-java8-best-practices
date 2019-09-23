@@ -1,4 +1,4 @@
-package com.techsqually.java.library.util;
+package com.techsqually.java.library.util.stringbuilder;
 
 public class StringBuilderTest {
 

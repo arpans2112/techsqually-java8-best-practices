@@ -1,4 +1,4 @@
-package com.techsqually.java.language.Recursion;
+package com.techsqually.java.language.recursion;
 
 public class DecimalToBinaryConversionUsingRecursion {
 
