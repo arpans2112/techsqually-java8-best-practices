@@ -1,4 +1,4 @@
-package com.techsqually.java.problemSolving;
+package com.techsqually.java.problemSolving.others;
 
 import java.math.BigInteger;
 
