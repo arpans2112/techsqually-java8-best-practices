@@ -1,6 +1,10 @@
 package com.techsqually.java.datastructure.collections.maps.hashmap;
 
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class HashMapBasics {
 
@@ -9,9 +13,9 @@ public class HashMapBasics {
     public static void main(String[] args) {
 
 
-        adddingMultipleValues();
-        System.out.println(returnRecord("Arpan"));
-
+  /*      adddingMultipleValues();
+        System.out.println(returnRecord("Arpan"));*/
+        computeIfAbsentMethodTest();
 
 
     }
@@ -46,6 +50,21 @@ public class HashMapBasics {
         * */
         phoneBook.putAll(newPhoneBook);
         return phoneBook;
+     }
+
+
+     public static void computeIfAbsentMethodTest(){
+
+        int count = 1;
+         Map<String,LinkedList<String>> newPhoneBook = new HashMap<>();
+        List<String> abc = newPhoneBook.computeIfAbsent("Arpan" + count , v -> {
+             return new LinkedList<String>();
+         });
+
+         abc.add("Arpan");
+         System.out.println(newPhoneBook);
+
+
      }
 
 }

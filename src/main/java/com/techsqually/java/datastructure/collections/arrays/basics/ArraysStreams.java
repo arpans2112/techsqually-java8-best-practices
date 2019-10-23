@@ -22,7 +22,6 @@ public class ArraysStreams {
         System.out.println(stream(a).min().getAsInt());
 
         Object[] charArray = stream(a).mapToObj(i -> (char) i).toArray();
-
         System.out.println(stream(a).mapToObj(i -> (char) i).map(String::valueOf).map(String::toUpperCase).collect(Collectors.joining()));
 
 

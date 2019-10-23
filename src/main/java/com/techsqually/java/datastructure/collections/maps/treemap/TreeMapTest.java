@@ -27,6 +27,33 @@ public class TreeMapTest {
         System.out.println(abc);
         System.out.println(stringSort);
 
+
+        TreeMap<Integer ,Integer> treeMap = new TreeMap<>();
+        treeMap.put(1,2);
+        treeMap.put(2, 3);
+        treeMap.put(4,2);
+
+
+        int pairmaxkey = treeMap.entrySet().stream().max(Map.Entry.comparingByKey()).get().getKey();
+        int pair1value = treeMap.entrySet().stream().max(Map.Entry.comparingByKey()).get().getValue();
+        int pairmaxvalue = treeMap.entrySet().stream().max(Map.Entry.comparingByValue()).get().getValue();
+        int keymaxvalue = treeMap.entrySet().stream().max(Map.Entry.comparingByValue()).get().getKey();
+
+
+         if (pairmaxkey > pairmaxvalue){
+
+             System.out.println( pairmaxkey + ": " + pair1value);
+         } else{
+
+             System.out.println( pairmaxvalue + ": " + keymaxvalue);
+
+         }
+
+
+//       int maxKey = treeMap.keySet().stream();
+
+
+
     }
 
 }
