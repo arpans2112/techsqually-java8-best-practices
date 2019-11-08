@@ -1,0 +1,1 @@
+this folder will contain resource files for this project
