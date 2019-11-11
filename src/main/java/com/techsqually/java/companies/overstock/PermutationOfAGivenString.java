@@ -22,9 +22,12 @@ public class PermutationOfAGivenString {
             baseResult.add("");
             return baseResult;
         }
+
         char ch = str.charAt(0);
         String rest = str.substring(1);
+
         ArrayList<String> recResult = allPermutation(rest);
+
         ArrayList<String> myResult = new ArrayList<>();
         for (int i = 0; i < recResult.size(); i++) {
             String s = recResult.get(i);
@@ -34,7 +37,7 @@ public class PermutationOfAGivenString {
             }
         }
         return myResult;
-        
+
     }
 
 }
