@@ -9,8 +9,6 @@ public class PermutationOfAGivenString {
 
     public static void main(String[] args) {
 
-     /*   Scanner s = new Scanner(System.in);
-        String str = s.next();*/
         String givenString = "abc";
         ArrayList<String> answer = allPermutation(givenString);
         Collections.sort(answer);
