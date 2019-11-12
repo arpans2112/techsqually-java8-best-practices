@@ -24,6 +24,7 @@ public class PermutationOfAGivenString {
         String rest = str.substring(1);
         ArrayList<String> recResult = allPermutation(rest);
         ArrayList<String> myResult = new ArrayList<>();
+
         for (int i = 0; i < recResult.size(); i++) {
             String s = recResult.get(i);
             for (int j = 0; j <= s.length(); j++) {
