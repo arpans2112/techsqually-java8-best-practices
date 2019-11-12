@@ -1,4 +1,4 @@
-package com.techsqually.java.problemSolving.strings;
+package com.techsqually.java.companies.overstock;
 
 
 
@@ -9,15 +9,15 @@ public class BalancedStringUsingRegularExpression {
 
     public static void main(String[] args) {
 
-        System.out.println(is_balanced("()()()()"));
-        System.out.println(is_balanced(")()()()("));
-        System.out.println(is_balanced("((())())"));
-        System.out.println(is_balanced("(((((())"));
+        System.out.println(isBalanced("()()()()"));
+        System.out.println(isBalanced(")()()()("));
+        System.out.println(isBalanced("((())())"));
+        System.out.println(isBalanced("(((((())"));
 
     }
 
 
-    public static boolean is_balanced(String inputString) {
+    public static boolean isBalanced(String inputString) {
 
         boolean isBlanced = false;
         Stack openBrancesStake = new Stack();
@@ -31,6 +31,7 @@ public class BalancedStringUsingRegularExpression {
                 }else
                     return isBlanced;
             }
+            index++;
         }
 
         return openBrancesStake.empty();

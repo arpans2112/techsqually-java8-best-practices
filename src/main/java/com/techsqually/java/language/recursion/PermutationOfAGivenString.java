@@ -1,13 +1,13 @@
 package com.techsqually.java.language.recursion;
 
-public class RecursionExample1Test {
+public class PermutationOfAGivenString {
 
     public int count = 0;
 
     public static void main(String[] args) {
 
-         RecursionExample1Test recursionExample1Test = new RecursionExample1Test();
-        recursionExample1Test.recursion("abc");
+         PermutationOfAGivenString permutationOfAGivenString = new PermutationOfAGivenString();
+        permutationOfAGivenString.recursion("abc");
 
     }
 
