@@ -8,6 +8,19 @@ public class ArrayDequeBasics {
 * 1. Deque can have duplicate elements
 * 2. Deque maintains the insertion order
 * 3. Deque has stream funtion
+* 4. Deque declares the behavior of a double ended queue. Double- ended queues can funtion as standard, first-in, first-out
+* or as last-in, first-out stacks.
+* 5. Null is not allowed in the deque
+* 6. Methods
+*       addFirst() -> add abj to the head of the deque, Throws an Illegal State Exception if a capacity-restricted
+*                     deque is out of space
+*       addLast() ->  add obj to the tail of the deque. Throws an illegal state exception
+*       Iterator<> descendingIterator() -> iterator that moves from the tail to the head of the deque
+*       getFirst() -> Returns first element without removing. if deque is empty throws NoSuchElementException
+*       getLast() -> Returns last element in the deque. The object is not removed from the deque. Throws
+*                    NoSuchElementException if the deque is empty
+*       offerFirst() ->
+*
 *
 *
 * */
