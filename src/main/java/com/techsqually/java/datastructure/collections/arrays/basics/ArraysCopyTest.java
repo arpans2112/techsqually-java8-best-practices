@@ -1,6 +1,7 @@
 package com.techsqually.java.datastructure.collections.arrays.basics;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class ArraysCopyTest {
 
@@ -15,7 +16,12 @@ public class ArraysCopyTest {
         int[] f = new int[3];
         int[] k = new int[3];
 
+        /** Can't coyp from Integer Array to int array*/
+        Integer[] abc = {1,2,3,4,5,6};
+        Integer[] IntegerTointCopy = new Integer[6];
 
+        System.arraycopy(abc,0,IntegerTointCopy,0,IntegerTointCopy.length);
+        System.out.println(Arrays.toString(IntegerTointCopy));
 
 
         /*

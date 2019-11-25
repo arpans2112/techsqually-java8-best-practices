@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
 
 public class HashMapBasics {
 
@@ -16,7 +17,7 @@ public class HashMapBasics {
   /*      adddingMultipleValues();
         System.out.println(returnRecord("Arpan"));*/
         computeIfAbsentMethodTest();
-
+        adddingMultipleValues();
 
     }
 
@@ -45,7 +46,17 @@ public class HashMapBasics {
 
         }};
 
-        /*
+
+        String keyValueCombinedString = newPhoneBook.entrySet().stream().
+                               map(entrySet -> entrySet.getKey() + ":"+ entrySet.getValue()).
+                               collect(Collectors.joining("," , "[","]"));
+
+
+
+
+         System.out.println(keyValueCombinedString);
+
+         /*
         * use of putAll funtion
         * */
         phoneBook.putAll(newPhoneBook);

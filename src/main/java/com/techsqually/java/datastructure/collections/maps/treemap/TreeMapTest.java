@@ -1,7 +1,10 @@
 package com.techsqually.java.datastructure.collections.maps.treemap;
 
+import java.util.Comparator;
 import java.util.Map;
 import java.util.TreeMap;
+
+import static java.util.Map.Entry.comparingByValue;
 
 public class TreeMapTest {
 
@@ -36,8 +39,13 @@ public class TreeMapTest {
 
         int pairmaxkey = treeMap.entrySet().stream().max(Map.Entry.comparingByKey()).get().getKey();
         int pair1value = treeMap.entrySet().stream().max(Map.Entry.comparingByKey()).get().getValue();
-        int pairmaxvalue = treeMap.entrySet().stream().max(Map.Entry.comparingByValue()).get().getValue();
-        int keymaxvalue = treeMap.entrySet().stream().max(Map.Entry.comparingByValue()).get().getKey();
+        int pairmaxvalue = treeMap.entrySet().stream().max(comparingByValue()).get().getValue();
+        int keymaxvalue = treeMap.entrySet().stream().max(comparingByValue()).get().getKey();
+
+
+
+
+
 
 
          if (pairmaxkey > pairmaxvalue){
